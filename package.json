@@ -1,0 +1,29 @@
+{
+  "name": "minicurso-angular-laravel",
+  "version": "1.0.0",
+  "description": "Material criado em curso",
+  "main": "index.html",
+  "dependencies": {
+    "angular": "^1.4.7",
+    "bootstrap": "^3.3.5",
+    "angular-ui-bootstrap": "^0.14.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rcbytes/app-minicurso-angular-laravel.git"
+  },
+  "keywords": [
+    "angular",
+    "starter"
+  ],
+  "author": "Rafael Mello Campanari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rcbytes/app-minicurso-angular-laravel/issues"
+  },
+  "homepage": "https://github.com/rcbytes/app-minicurso-angular-laravel"
+}

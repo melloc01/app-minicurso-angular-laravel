@@ -1,0 +1,81 @@
+.form-container {
+	margin-top: 50px;
+	padding: 20px;
+	border: 1px solid #ccc;
+}
+
+.note-header i {
+	font-weight: bold;
+	float: right;
+	font-size: 16px;
+	cursor: pointer;
+	font-style: normal;
+	margin-left:15px;
+
+}
+
+.note-header i:hover {
+
+	-webkit-transform: scale(2);
+	   -moz-transform: scale(2);
+	    -ms-transform: scale(2);
+	     -o-transform: scale(2);
+	        transform: scale(2);
+
+}
+
+
+note {
+
+	-webkit-transform: scale(1);
+	   -moz-transform: scale(1);
+	    -ms-transform: scale(1);
+	     -o-transform: scale(1);
+	        transform: scale(1);
+
+    -webkit-transition: all .25s ease-out;
+       -moz-transition: all .25s ease-out;
+        -ms-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+
+}
+
+note.ng-enter {
+
+	-webkit-transform: scale(0);
+	   -moz-transform: scale(0);
+	    -ms-transform: scale(0);
+	     -o-transform: scale(0);
+	        transform: scale(0);
+
+}
+
+note.ng-enter-active {
+
+	-webkit-transform: scale(1);
+	   -moz-transform: scale(1);
+	    -ms-transform: scale(1);
+	     -o-transform: scale(1);
+	        transform: scale(1);
+
+}
+
+note.ng-leave {
+
+   	-webkit-transform: scale(1);
+	   -moz-transform: scale(1);
+	    -ms-transform: scale(1);
+	     -o-transform: scale(1);
+	        transform: scale(1);
+
+}
+note.ng-leave-active {
+
+	-webkit-transform: scale(0);
+	   -moz-transform: scale(0);
+	    -ms-transform: scale(0);
+	     -o-transform: scale(0);
+	        transform: scale(0);
+
+}

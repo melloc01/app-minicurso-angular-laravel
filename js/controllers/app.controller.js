@@ -18,18 +18,29 @@
 
 			var route = apiUrl + '/note';
 
-			// DELETE /note/{id}
+			// exclua ou comente essa linha ao descomentar o bloco abaixo
+			vm.notes.splice(index, 1);
+			
+			/*
+			* DELETE /note/{id}
+			* Descomente essa parte para fazer a requisição
+			*
+
 			var promise = $http.delete(route + '/' + id);
 
 			promise.then(
 				function success (response) {
-					vm.notes.splice(index, 1);
+					
+					// vm.notes.splice(index, 1);
+				
 				},
 				function error (response) {
 					console.error(e);
 
 				}
 			);
+
+			*/
 
 
 		}
@@ -53,8 +64,6 @@
 	    modalInstance.result.then(
 	    	function success (note) {
 	    		
-	    		console.warn(vm.notes);
-	    		console.warn(index);
 					vm.notes[index] = note;
 
 	    	}, 
@@ -69,21 +78,29 @@
 		function createNote () {
 
 			var route = apiUrl + '/note';
+			
+			// exclua essas linhas em caso de testes com a API
+			vm.entity.id = (vm.notes.length + 1);
+			vm.notes.push(vm.entity);
+			vm.entity = {};
 
-			// POST /note | Como  parâmetro o objeto vm.entity 
-			var promise = $http.post(route, vm.entity);
+			/*
+			* POST /note | Como  parâmetro o objeto vm.entity 
+			* Descomente caso queira fazer a requisição
+			*
+				var promise = $http.post(route, vm.entity);
+				promise.then(
+					function success (response) {
 
-			promise.then(
-				function success (response) {
+						vm.notes.push(response.data);
+						
+					}, 
+					function error (e) {
+						
+						console.error(e);
 
-					vm.notes.push(response.data);
-					
-				}, 
-				function error (e) {
-					
-					console.error(e);
-
-				})
+					})
+			*/
 
 		}
 

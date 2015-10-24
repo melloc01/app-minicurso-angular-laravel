@@ -43,6 +43,8 @@
 				// backup do index - ele é alterado quando se usa o filter filter (ha!)
 				scope.index = angular.copy(scope.$index);
 
+				console.warn(scope.index);
+
 
 			}
 

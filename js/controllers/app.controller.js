@@ -107,7 +107,7 @@
 		// inicializações 
 
 		function init () {
-
+			
 			var route = '/resources/notes.json';
 
 			// GET /note | retorna todas as notas

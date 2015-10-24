@@ -1,4 +1,4 @@
-# App - Alicação Angular
+# App - Aplicação Angular
 ## Minicurso  - Criando uma SPA com AngularJS + Laravel
 
 ### Demo
